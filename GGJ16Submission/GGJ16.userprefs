@@ -1,0 +1,25 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/_Scripts/HeartbeatController.cs">
+    <Files>
+      <File FileName="Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/FirstPersonController.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="Assets/_Scripts/ResetOnCollision.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="Assets/_Scripts/NephalemCollector.cs" Line="4" Column="49" NotebookId="1" />
+      <File FileName="Assets/Standard Assets/Characters/ThirdPersonCharacter/Scripts/AICharacterControl.cs" Line="39" Column="104" NotebookId="1" />
+      <File FileName="Assets/_Scripts/NephalemFlameSoundScript.cs" Line="8" Column="16" NotebookId="1" />
+      <File FileName="Assets/_Scripts/WindPlayerLooper.cs" Line="19" Column="23" NotebookId="1" />
+      <File FileName="Assets/_Scripts/HeartbeatController.cs" Line="21" Column="1" NotebookId="1" />
+    </Files>
+    <FloatingWindows>
+      <FloatingWindow WindowId="1" X="1014" Y="23" Width="906" Height="992">
+        <Files>
+          <File FileName="Assets/_Scripts/NephalemSpeakingScript.cs" Line="33" Column="7" />
+        </Files>
+      </FloatingWindow>
+    </FloatingWindows>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
