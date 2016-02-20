@@ -43,7 +43,7 @@ public class HeartbeatController : MonoBehaviour {
 
 		if(distanceToClosest < fastDistance) {
 
-			float newVolume = startingVolume + 0.3f * (1f - distanceToClosest / fastDistance);
+			float newVolume = startingVolume + (1f - startingVolume) * (1f - distanceToClosest / fastDistance);
 			audioSource.volume = newVolume;
 
 			if(!fastPlaying) {

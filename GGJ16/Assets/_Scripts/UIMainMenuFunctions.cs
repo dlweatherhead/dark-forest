@@ -10,6 +10,10 @@ public class UIMainMenuFunctions : MonoBehaviour {
 	public GameObject infoText;
 	public GameObject backButton;
 
+	void Start() {		
+		Cursor.visible = true;
+	}
+
 	public void StartGame() {
 		SceneManager.LoadScene("Level");
 	}
