@@ -3,7 +3,7 @@ using System.Collections;
 
 public class NephalemCollector : MonoBehaviour {
 
-	private int nephalemFlamesCollected = 0;
+	private int nephalemFlamesCollected;
 
 	void OnTriggerEnter(Collider other) {
 		if(other.tag.Equals("NephalemFlame")) {

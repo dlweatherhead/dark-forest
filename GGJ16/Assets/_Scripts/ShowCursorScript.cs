@@ -5,11 +5,9 @@ public class ShowCursorScript : MonoBehaviour {
 
 	public UIMainMenuFunctions mainFunctions;
 
-	// Use this for initialization
 	void Start () {
 		Cursor.visible = true;
 	}
-
 
 	void FixedUpdate() {
 		if(Input.GetKey(KeyCode.Escape)) {

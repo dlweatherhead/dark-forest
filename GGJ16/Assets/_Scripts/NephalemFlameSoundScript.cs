@@ -16,8 +16,6 @@ public class NephalemFlameSoundScript : MonoBehaviour {
 			audioSource.clip = pickUpClip;
 			audioSource.Play();
 
-			//AudioSource.PlayClipAtPoint(pickUpClip, gameObject.transform.position);
-
 			transform.position = new Vector3(0f,-1000f,0f);
 
 			StartCoroutine(DestroyFlame(pickUpClip.length));

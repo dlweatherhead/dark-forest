@@ -5,7 +5,6 @@ public class NephalemSpeakingScript : MonoBehaviour {
 
 	public NephalemCollector player;
 	public int flamesRequired;
-
 	public AudioClip ritualCompleteClip;
 	public AudioClip needMoreFlameClip;
 
@@ -18,19 +17,14 @@ public class NephalemSpeakingScript : MonoBehaviour {
 	void OnTriggerEnter(Collider other) {
 		if(other.tag.Equals("Player")) {
 			if(player.flamesCollected() == flamesRequired) {
-
 				audioSource.clip = ritualCompleteClip;
 				audioSource.Play();
-
-				//AudioSource.PlayClipAtPoint(ritualCompleteClip, gameObject.transform.position);
 
 				StartCoroutine(ResetOnCollision.loadMainScene(ritualCompleteClip.length + 1f));
 			}
 			else {
 				audioSource.clip = needMoreFlameClip;
 				audioSource.Play();
-
-				//AudioSource.PlayClipAtPoint(needMoreFlameClip, other.transform.position);
 			}
 		}
 	}

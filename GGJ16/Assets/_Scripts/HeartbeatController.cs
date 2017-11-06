@@ -6,26 +6,21 @@ public class HeartbeatController : MonoBehaviour {
 	public AudioClip slowHeartBeat;
 	public AudioClip midHeartBeat;
 	public AudioClip fastHeartBeat;
-
 	public float fastDistance;
 	public float midDistance;
-
 	public bool slowPlaying = true;
-	public bool midPlaying = false;
-	public bool fastPlaying = false;
-
+	public bool midPlaying;
+	public bool fastPlaying;
 	public float distanceToClosest;
 
 	private float startingVolume;
-
 	private AudioSource audioSource;
 	private GameObject[] enemies;
 
 	void Awake() {
 		audioSource = gameObject.GetComponent<AudioSource>();
-
 		enemies = GameObject.FindGameObjectsWithTag("Enemy");
-
+		
 		startingVolume = audioSource.volume;
 	}
 
@@ -33,8 +28,6 @@ public class HeartbeatController : MonoBehaviour {
 		distanceToClosest = 9999f; // Very Large Number
 
 		foreach(GameObject enemy in enemies) {
-			// Determine the closest enemy
-				
 			float enemyDistance = Vector3.Distance(gameObject.transform.position, enemy.transform.position);
 	
 			if(enemyDistance < distanceToClosest)
@@ -42,7 +35,6 @@ public class HeartbeatController : MonoBehaviour {
 		}
 
 		if(distanceToClosest < fastDistance) {
-
 			float newVolume = startingVolume + (1f - startingVolume) * (1f - distanceToClosest / fastDistance);
 			audioSource.volume = newVolume;
 
@@ -57,7 +49,6 @@ public class HeartbeatController : MonoBehaviour {
 		}
 
 		if(distanceToClosest < midDistance) {
-
 			if(!midPlaying){
 				audioSource.clip = midHeartBeat;
 				audioSource.volume = startingVolume;

@@ -5,17 +5,15 @@ using System.Collections;
 public class ResetOnCollision : MonoBehaviour {
 
 	public string colliderTag;
-	public GameObject deathSplosion;
 	public float restartDelay = 1f;
-
+	public GameObject deathSplosion;
 	public GameObject deathOverlay;
 
-	private bool killTriggered = false;
+	private bool killTriggered;
 
 	void FixedUpdate() {
-		if(Input.GetKey(KeyCode.Escape)) {
+		if(Input.GetKey(KeyCode.Escape))
 			SceneManager.LoadScene("Main");
-		}
 	}
 
 	void OnTriggerEnter(Collider other) {
@@ -32,7 +30,6 @@ public class ResetOnCollision : MonoBehaviour {
 
 	public static IEnumerator loadMainScene(float delay) {
 		yield return new WaitForSeconds(delay);
-		// Reset the level.
 		SceneManager.LoadScene("Main");
 	}
 }

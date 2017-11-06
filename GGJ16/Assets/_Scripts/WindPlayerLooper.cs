@@ -7,7 +7,7 @@ public class WindPlayerLooper : MonoBehaviour {
 	public AudioClip[] windArray;
 	private AudioSource audioSource;
 
-	private int currentClip = 0;
+	private int currentClip;
 
 	void Awake() {
 		audioSource = gameObject.GetComponent<AudioSource>();
@@ -18,12 +18,10 @@ public class WindPlayerLooper : MonoBehaviour {
 			audioSource.clip = windArray[currentClip];
 			audioSource.Play();
 
-			if(currentClip < windArray.Length) {
+			if(currentClip < windArray.Length)
 				currentClip++;
-			}
-			else {
+			else
 				currentClip = 0;
-			}
 		}
 	}
 }
