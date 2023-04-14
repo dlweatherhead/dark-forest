@@ -14,10 +14,5 @@ W, A, S, D - Move
 Shift - Sprint
 Mouse - Look
 
-**Attribution**  
-Dead Font Walking by _Chequered Ink_, [link](https://www.dafont.com/dead-font-walking.font).  
-Classic Skybox by _mgsvevo_, [link](https://assetstore.unity.com/packages/2d/textures-materials/sky/classic-skybox-24923).  
-Horror Ambient Sounds Pack by _Luka Kotar_, [link](https://assetstore.unity.com/packages/audio/ambient/horror-ambient-sounds-pack-4151).
-
 ## Technical Information
 Requires Unity version 2017.1.0f3
