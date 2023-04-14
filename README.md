@@ -9,9 +9,10 @@ The game is meant to be played dark with low contrast and earphones.
 I hope you enjoy.
 
 ## How to play
+Playable on [itch.io](https://dlw.itch.io/dark-forest)
 W, A, S, D - Move
 Shift - Sprint
-Mouse - Look.
+Mouse - Look
 
 **Attribution**  
 Dead Font Walking by _Chequered Ink_, [link](https://www.dafont.com/dead-font-walking.font).  
